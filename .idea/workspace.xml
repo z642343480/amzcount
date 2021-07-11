@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d5818fa-6604-46e9-b4f5-f7039231be8d" name="默认变更列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/Index/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/Index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,7 @@
       <workItem from="1622726616507" duration="11066000" />
       <workItem from="1622862317701" duration="27346000" />
       <workItem from="1625987902956" duration="2031000" />
-      <workItem from="1625995897270" duration="7182000" />
+      <workItem from="1625995897270" duration="7682000" />
     </task>
     <servers />
   </component>

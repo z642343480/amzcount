@@ -18,5 +18,5 @@
 
 
 return [
-
+    Route::get('index', 'index/index')
 ];

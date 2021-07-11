@@ -21,7 +21,7 @@ class Index extends Controller
 
     public function tt()
     {
-        return $this->fetch();
+        return $this->fetch("Index/tt");
     }
 
     public function getList(Request $request)

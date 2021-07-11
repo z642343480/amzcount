@@ -15,7 +15,7 @@
 //
 //Route::get('hello/:name', 'index/hello');
 //Route::POST('Log', 'admin/Log/index');
-Route::get('index', 'index/index');
+Route::get('index', 'index/Index');
 
 
 //return [

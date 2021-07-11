@@ -48,7 +48,7 @@ class Index extends Controller
                         'data' => [],
                         'totle' => 0,
                         'code' => 0,
-                        'message' => '每周增长量必须是正数'
+                        'message' => '每周增长量必须是正数111'
                     );
                     return json_encode($res, true);
                     exit;

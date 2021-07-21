@@ -420,8 +420,7 @@ class Index extends Controller
             / 
             (select count(1) from " . $this->tablename . " 
             where update_time >= (
-        SELECT update_time FROM ".$this->tablename." t5 WHERE ".$newfsdate1.$newfedate1." and t5.key_words = u.key_words LIMIT 1,1)  and key_words=u.key_words) >=" . $ssatisfy_p . " and (select count(1) d from " . $this->tablename . " where " . $csdate . $cedate . "  and key_words=u.key_words) >=1  ORDER BY update_time desc limit 9999999999) T1 group by key_words ORDER BY ".$orderbys." 
-            ");
+        SELECT update_time FROM ".$this->tablename." t5 WHERE ".$newfsdate1.$newfedate1." and t5.key_words = u.key_words LIMIT 1,1)  and key_words=u.key_words) >=" . $ssatisfy_p . " and (select count(1) d from " . $this->tablename . " where " . $csdate . $cedate . "  and key_words=u.key_words) >=1  ORDER BY update_time desc limit 9999999999) T1 group by key_words"); //ORDER BY ".$orderbys."    放在最后面
         } else {
             $List = Db::table($this->tablename)->whereIn("id", $idArr)->order("update_time asc")->select();
 

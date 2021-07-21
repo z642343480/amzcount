@@ -210,8 +210,8 @@ class Index extends Controller
             / 
             (select count(1) from " . $this->tablename . " 
             where update_time >= (
-        SELECT update_time FROM ".$this->tablename." t5 WHERE ".$newfsdate1.$newfedate1." and t5.key_words = u.key_words LIMIT 1,1)   and key_words=u.key_words) >=" . $ssatisfy_p . " and (select count(1) d from " . $this->tablename . " where " . $csdate . $cedate . "  and key_words=u.key_words) >=1  ORDER BY update_time desc limit 9999999999) T1 group by T1.key_words ORDER BY ".$orderbys." limit " . $pages . "," . $param['limit'] . "
-            ")  ;
+        SELECT update_time FROM ".$this->tablename." t5 WHERE ".$newfsdate1.$newfedate1." and t5.key_words = u.key_words LIMIT 1,1)   and key_words=u.key_words) >=" . $ssatisfy_p . " and (select count(1) d from " . $this->tablename . " where " . $csdate . $cedate . "  and key_words=u.key_words) >=1  ORDER BY update_time desc limit 9999999999) T1 group by T1.key_words  limit " . $pages . "," . $param['limit'] . "
+            ")  ; //ORDER BY ".$orderbys." 放在limit前面
         $Listcount = Db::query("
             select count(1) num from (
             select * from " . $this->tablename . " u
